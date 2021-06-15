@@ -3,7 +3,7 @@ class binarySearch {
     public static void main(String[] args) {
         int[] arr = {11, 22, 33, 44, 55, 66, 77};
         int n = 22;
-        System.out.println("For index number " + n + "\n is : " + binarySearch(arr, n));
+       System.out.println("For index number " + n + "\n is : " + binarySearch(arr, n));
     }
 
  
