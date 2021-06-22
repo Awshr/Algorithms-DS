@@ -1,15 +1,22 @@
 package DataStructures.LinkedList;
 
 public class Node {
-    int data;
-    Node next;
+    private int data;
+    private Node getNext;
 
     public Node(int data) {
         this.data = data;
     }
 
     public void setNext(Node next) {
-        this.next = next;
+        this.getNext = next;
     }
 
+    public int getData() {
+        return this.data;
+    }
+
+    public Node getNext () {
+        return this.getNext;
+    }
 }

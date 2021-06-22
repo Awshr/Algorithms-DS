@@ -2,28 +2,26 @@ package DataStructures.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        Node head = new Node(12);
-        Node b = new Node(234);
-        Node c = new Node(34);
-        Node d = new Node(1010);
+        LinkedList ls = new LinkedList();
+        ls.append(880);
+        ls.append(230948);
 
-        head.setNext(b);
-        b.setNext(c);
-        c.setNext(d);
+        // ls.pop(1);
+        
+        // ls.pop(0);
+        
+        ls.append(76);
+        ls.append(243);
+        ls.append(103);
+        ls.append(253);
+        ls.pop(ls.getSize()-1);
+        ls.pop(ls.getSize()-1);
+        ls.pop(ls.getSize()-1);
 
-        printNodes(head);
-    }
-
-    // Printing the connected nodes.
-    public static void printNodes(Node head) {
-        if (head == null) System.out.println("");
-
-        Node currentNode = head;
-
-        while(currentNode != null) {
-            System.out.println(currentNode.data);
-            currentNode = currentNode.next;
-        }
-    }
-
+        ls.append(5);
+        ls.pop(0);
+        ls.pop(0);
+        ls.pop(1);
+        System.out.println(ls);
+    }  
 }
