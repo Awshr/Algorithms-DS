@@ -7,7 +7,7 @@ public class LinkedList {
     // constructor that take the head data as an argument
     public LinkedList(int data) {
         this.head = new Node(data);
-        ++size;
+        ++this.size;
     }
 
     public LinkedList() {} // empty contructor with no args to aviod errors
@@ -42,16 +42,14 @@ public class LinkedList {
     public void append(int data) {
         if (this.size == 0) {
             this.head = new Node(data);
-            ++size;
         }
         else if (this.size == 1) {
             head.setNext(new Node(data));
-            ++size;
         }
         else {
             lastNode().setNext(new Node(data));
-            ++size;
         }
+        ++this.size;
     }
 
     // It returns the lats node in the linked list

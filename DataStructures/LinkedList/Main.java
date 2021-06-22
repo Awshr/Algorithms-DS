@@ -14,14 +14,14 @@ public class Main {
         ls.append(243);
         ls.append(103);
         ls.append(253);
-        ls.pop(ls.getSize()-1);
-        ls.pop(ls.getSize()-1);
-        ls.pop(ls.getSize()-1);
+        // ls.pop(ls.getSize()-1);
+        // ls.pop(ls.getSize()-1);
+        // ls.pop(ls.getSize()-1);
 
         ls.append(5);
-        ls.pop(0);
-        ls.pop(0);
-        ls.pop(1);
-        System.out.println(ls);
+        // ls.pop(0);
+        // ls.pop(0);
+        // ls.pop(1);
+        System.out.println(ls + " , and the SIZE: " + ls.getSize());
     }  
 }
