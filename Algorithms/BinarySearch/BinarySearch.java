@@ -1,7 +1,6 @@
 package Algorithms.BinarySearch;
 
-class BinarySearch {
-    
+public class BinarySearch {
     public static int binarySearch(int[] arr, int target) {
         int high = arr.length - 1;
         int low = 0;
@@ -9,7 +8,7 @@ class BinarySearch {
 
         while(high >= low) {
             key = (high + low) / 2;
-            // System.out.println(key);
+            System.out.println(key);
             if(arr[key] == target) return key;
 
             else if(arr[key] > target) {

@@ -27,6 +27,17 @@ public class LinkedList {
         }
     }
 
+    public int get(int index) {
+        if (index == 0) return head.getData();
+        else if (index <= size - 1 && index > 0) {
+        Node current = head;
+        for (int i = 0; i < index; i++)
+            current = current.getNext();
+
+        return current.getData();
+        }
+        return 0;
+    }
     // A method that returns the node that will be next
     private Node afterPopped(int index) {
         if (index == 0) {
@@ -60,7 +71,7 @@ public class LinkedList {
         return current;
     }
 
-    public int getSize() {
+    public int size() {
         return this.size;
     }
 
