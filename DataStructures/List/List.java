@@ -1,6 +1,6 @@
 package DataStructures.List;
 
-import java.util.concurrent.SynchronousQueue;
+import java.util.Objects;
 
 public class List {
     private int[] arr;
@@ -33,7 +33,6 @@ public class List {
     public void insert(int value, int index) {
         if (index <= this.length && index >= 0) {
             if (this.length < this.capacity) {
-                System.out.println("Hi there!");
                 for (int i = this.length; i > index; i--) {
                     this.arr[i] = this.arr[i - 1];
                 }
@@ -57,7 +56,6 @@ public class List {
         } else {
             System.out.println("Error: index should be 0 <= index <= " + this.length);
         }
-
     }
 
     // removing element by index
@@ -85,6 +83,12 @@ public class List {
                 return i;
         }
         return -1;
+    }
+
+    // get an item from the list
+    public int get(int index) {
+        Objects.checkIndex(index, this.length); // don't know what is that..
+        return this.arr[index];
     }
 
     // it reterns the appearing length of the array
