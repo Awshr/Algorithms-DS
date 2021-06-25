@@ -1,2 +1,2 @@
 # Algorithms-DS
-# A repo for Algo & DS
+# My Algo & DS library
